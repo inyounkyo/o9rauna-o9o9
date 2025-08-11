@@ -1,0 +1,35 @@
+/* Footer section styling */
+.footer_section {
+  padding: 20px 0;
+  background: var(--dark-color);
+}
+
+.footer_section .social_link_list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer_section .social_link_list .social_link {
+  font-size: var(--font-size-l);
+}
+
+.footer_section .social_link_list .social_link:hover,
+.footer_section .policy_text .policy_link:hover {
+  color: var(--secondary-color);
+}
+
+.footer_section .section_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_section :where(.copyright_text, .social_link, .policy_link) {
+  color: var(--white-color);
+  transition: 0.2s ease;
+}
+
+.footer_section .policy_text .seperator {
+  margin: 0 5px;
+  color: var(--white-color);
+}

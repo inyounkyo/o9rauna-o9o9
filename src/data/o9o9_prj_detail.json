@@ -1,0 +1,50 @@
+{
+  "1": {
+    "id": 1,
+    "pjtName": "xCeeds1-10",
+    "qty": 102,
+    "price": 123330,
+    "date": "2023-01-11",
+    "content": "Aesop's Fables, or the Aesopica, is a collection of fables credited to Aesop, a slave and storyteller who lived in ancient Greece between 620 and 564 BCE. Of varied and unclear origins, the stories associated with his name have descended to modern times through a number of sources and continue to be reinterpreted in different verbal registers and in popular as well as artistic media."
+  },
+  "2": {
+    "id": 2,
+    "pjtName": "xCeeds31-150",
+    "qty": 12,
+    "price": 3330,
+    "date": "2013-03-11",
+    "content": "The fables were part of oral tradition and were not collected until about three centuries after Aesop's death. By that time, a variety of other stories, jokes and proverbs were being ascribed to him"
+  },
+  "3": {
+    "id": 3,
+    "pjtName": "xcCeeds34-1250",
+    "qty": 122,
+    "price": 13330,
+    "date": "2014-11-11",
+    "content": "The process is continuous and new stories are still being added to the Aesop corpus, even when they are demonstrably more recent work and sometimes from known authors."
+  },
+  "4": {
+    "id": 4,
+    "pjtName": "acCeeds34-150",
+    "qty": 1,
+    "price": 13330,
+    "date": "2025-03-11",
+    "content": "Manuscripts in Latin and Greek were important avenues of transmissions, although poetical treatments in European vernaculars eventually formed another. On the arrival of printing, collections of Aesop's fables were among the earliest books in a variety of languages. "
+  },
+  "5": {
+    "id": 5,
+    "pjtName": "xCeeds31-10",
+    "qty": 42,
+    "price": 1230,
+    "date": "2014-03-11",
+    "content": "Through the means of later collections, and translations or adaptations of them, Aesop's reputation as a fabulist was transmitted throughout the world."
+  },
+  "6": {
+    "id": 6,
+    "pjtName": "xdeeds31-150",
+    "qty": 12,
+    "price": 3330,
+    "date": "2018-12-11",
+    "content": "Initially the fables were addressed to adults and covered religious, social and political themes. They were also put to use as ethical guides and from the Renaissance onwards were particularly used for the education of children."
+  }
+}

@@ -11,7 +11,7 @@ const Header = () => {
         <nav className="navigation">
           <a href="/">Home</a>
           <a href="/o9o9_list">o9_List</a>
-          <a href="/o9o9_detail">Service</a>
+          <a href="/o9o9_serve">Service</a>
           <a href="/o9o9_contact">o9_Contack</a>
           {/* <Link to="/login">
             <button className="btnLogin-popup">sss</button>

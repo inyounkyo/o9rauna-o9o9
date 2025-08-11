@@ -277,6 +277,30 @@ table th {
   height: 40px;
   font-size: 14px;
 }
+.table-list .del-btn button {
+  border: none;
+  padding: 3px 6px;
+}
+.table-list .del-btn button:hover {
+  cursor: pointer;
+}
+
+/* o9o9_detail styling */
+.detail-container {
+  border: 1px solid white;
+  width: 500px;
+}
+
+.detail-container .detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.detail-container .detail-value textarea {
+  width: 471px;
+  height: 128px;
+}
 
 /* Footer section styling */
 .footer-section {
