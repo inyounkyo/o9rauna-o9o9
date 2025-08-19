@@ -5,9 +5,13 @@ const O9o9_list_itme = ({ item, delEventHandler }) => {
   return (
     <>
       <td>{item.id}</td>
-      <td>{item.pjtName}</td>
+      <td>
+        <Link to="/o9o9_detail" state={{ id: item.id }}>
+          {item.pjtName}
+        </Link>
+      </td>
       <td>{item.qty}</td>
-      <td>{item.price}</td>
+      <td>{new Intl.NumberFormat().format(item.price)}</td>
       <td>{item.rating}</td>
       <td>{item.date}</td>
       <td className="del-btn">
