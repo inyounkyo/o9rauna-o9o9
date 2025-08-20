@@ -9,6 +9,7 @@ const o9o9_contact = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    console.log(data);
     if (Object.keys(errors).length !== 0) {
       console.log(errors.email?.message);
     } else {
@@ -53,26 +54,30 @@ const o9o9_contact = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <input
-              {...register("name")}
+              {...register("name", { required: true, minLength: 1 }) }
               placeholder="Your name"
               className="form-input"
             />
+             {errors.name?.type === "required" && (
+                <p role="alert">First name is required</p>
+              )}
             <input
               type="text"
               placeholder="Email"
               className="form-input"
               {...register("email", {
-                required: true,
+                required: "Email Address is required",
                 pattern: {
                   value: /^\S+@\S+$/i,
                   message: "Plz enter valid email.",
                 },
                 maxLength: {
-                  value: 2,
+                  value: 30,
                   message: "This input exceed maxLength.",
                 },
               })}
             />
+             {errors.email && <p role="alert">{errors.email.message}</p>}
             <textarea
               {...register("msg")}
               placeholder="Your message"

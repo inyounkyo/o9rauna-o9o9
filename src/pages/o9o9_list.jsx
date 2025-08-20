@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import prjListData from "../data/o9o9_prj_list.json";
+import { useState } from "react";
 
 const O9o9_list_itme = ({ item, delEventHandler }) => {
   return (
@@ -24,8 +25,14 @@ const O9o9_list_itme = ({ item, delEventHandler }) => {
 //-----------------------------------------------------------------------
 
 const O9o9_list = () => {
+  const [prjList, setPrjList] = useState(prjListData);
+
   const deleteListRow = (id) => {
     console.log("deleteListRow()->id: %s", id);
+    const liveList = prjList.filter((row) => {
+      return (row.id !== id);
+    });
+    setPrjList(liveList);
   };
 
   return (
@@ -43,7 +50,7 @@ const O9o9_list = () => {
               <th>날짜</th>
               <th>삭제</th>
             </tr>
-            {prjListData.map((data, idx) => {
+            {prjList.map((data, idx) => {
               return (
                 <tr key={idx}>
                   <O9o9_list_itme
