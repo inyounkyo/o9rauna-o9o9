@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import prjDetailtData from "../data/o9o9_prj_detail.json";
 
@@ -24,7 +25,7 @@ const O9o9_detail = () => {
       <div className="detail-item">
         <div className="detail-value">
           <span>가격:</span>
-          <span>{detailItem["price"]}</span>
+          <span>{new Intl.NumberFormat().format(detailItem["price"])}</span>
         </div>
         <div className="detail-value">
           <span>날짜:</span>
@@ -36,8 +37,11 @@ const O9o9_detail = () => {
           <span>내용:</span>
         </div>
         <div className="detail-value">
-          <textarea value={detailItem["content"]}></textarea>
+          <textarea value={detailItem["content"]} readOnly></textarea>
         </div>
+      </div>
+      <div className="list-btn">
+        <button><Link to="/o9o9_list">목록</Link></button>
       </div>
     </div>
   );

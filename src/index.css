@@ -340,6 +340,18 @@ table th {
   margin-right: 10px;
 }
 
+.detail-container .list-btn {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.detail-container .list-btn button {
+  padding: 2px;
+  border-style: none;
+}
+.detail-container .list-btn button:hover {
+  cursor: pointer;
+}
+
 /* o9o9_serve styling */
 .serve-container {
   width: 800px;
