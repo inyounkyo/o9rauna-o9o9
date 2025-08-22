@@ -54,13 +54,13 @@ const o9o9_contact = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <input
-              {...register("name", { required: true, minLength: 1 }) }
+              {...register("name", { required: true, minLength: 1 })}
               placeholder="Your name"
               className="form-input"
             />
-             {errors.name?.type === "required" && (
-                <p role="alert">First name is required</p>
-              )}
+            {errors.name?.type === "required" && (
+              <span role="alert">First name is required</span>
+            )}
             <input
               type="text"
               placeholder="Email"
@@ -77,7 +77,7 @@ const o9o9_contact = () => {
                 },
               })}
             />
-             {errors.email && <p role="alert">{errors.email.message}</p>}
+            {errors.email && <span role="alert">{errors.email.message}</span>}
             <textarea
               {...register("msg")}
               placeholder="Your message"
